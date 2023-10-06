@@ -7,11 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Tarea1
-{
 
 
-    public partial class _Default
-    {
-    }
+public partial class  {
 }
