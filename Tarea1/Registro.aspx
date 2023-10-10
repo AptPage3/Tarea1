@@ -1,9 +1,16 @@
-﻿<%@ Page Title="Registro de propuestas legislativas" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="Tarea1.WebForm1" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Registro de propuestas legislativas</h2>
-    <form id="form-crear" action="Guardar">
-        <label>Identificación: </label>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <label>Identificación: </label>
         <input type="text" name="cedula" id="txtced"pattern="^[1-9]-\d{4}-\d{4}$|^[0-9]{12}$"title="El formato es 0-0000-0000 o si es de residencia 000000000000"required/><br>
         <label>Nombre</label>
         <input type="text" name="nombreM" id="txtnombre"pattern="\w+."title="Por favor escriba algo"required/><br>
@@ -26,7 +33,7 @@
         <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList><br>
         <input type="submit" value="Enviar">
         <input type="button" value="Limpiar">
+        </div>
     </form>
-        
-    
-</asp:Content>
+</body>
+</html>
